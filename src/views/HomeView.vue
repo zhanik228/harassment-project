@@ -147,6 +147,7 @@ export default {
       emailjs.init('rbFI_1ITj3IWrPgho');
       emailjs.sendForm("service_oji1kcr","template_9koj2nj", form);
       this.success = true;
+      this.message = ''
     }
   }
 }
