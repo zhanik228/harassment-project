@@ -168,7 +168,7 @@
                     </div>
                   
                 </div>
-              
+                <p v-if="success" class="text-green-500 text-xs italic">Успешно отправлено.</p>
             </form>
           
         </div>
@@ -177,8 +177,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   data() {
     return {
@@ -187,6 +185,7 @@ export default {
       email: '',
       message: '',
       error: false,
+      success: false,
     }
   },
   methods: {
@@ -200,6 +199,7 @@ export default {
 
       emailjs.init('rbFI_1ITj3IWrPgho');
       emailjs.sendForm("service_oji1kcr","template_9koj2nj", form);
+      this.success = true;
     }
   }
 }
