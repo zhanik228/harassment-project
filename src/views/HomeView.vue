@@ -96,56 +96,6 @@
             <form class="form md:col-span-8 p-10" @submit.prevent="sendMessage">
               <input hidden type="text" name="to_name" value="zhanik">
                 <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                            for="grid-first-name">
-                            Имя
-                        </label>
-                        <input
-                            v-model="first_name"
-                            :class="`appearance-none block w-full bg-gray-200 text-gray-700 border ${!first_name && error ? 'border-red-500' : ''} rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`"
-                            id="grid-first-name" 
-                            type="text" 
-                            placeholder="Jane"
-                            name="name">
-                        <p v-if="!first_name && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
-                    </div>
-                    <div class="w-full md:w-1/2 px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                            for="grid-last-name">
-                            Фамилия
-                        </label>
-                        <input
-                            v-model="last_name"
-                            :class="`appearance-none block w-full bg-gray-200 text-gray-700 border ${!last_name && error ? 'border-red-500' : ''} rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`"
-                            id="grid-last-name" 
-                            type="text" 
-                            placeholder="Doe"
-                            name="last_name"
-                            >
-                            <p v-if="!last_name && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
-                    </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                            for="grid-password"
-                            >
-                            Email
-                        </label>
-                        <input
-                            v-model="email"
-                            :class="`appearance-none block w-full bg-gray-200 text-gray-700 border ${!email && error ? 'border-red-500' : ''} rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`"
-                            id="grid-email" 
-                            type="email" 
-                            placeholder="********@*****.**"
-                            name="email"
-                            >
-                            <p v-if="!email && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
-                    </div>
-                </div>
-              
-                <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                             for="grid-password">
@@ -180,9 +130,6 @@
 export default {
   data() {
     return {
-      first_name: '',
-      last_name: '',
-      email: '',
       message: '',
       error: false,
       success: false,
@@ -192,7 +139,7 @@ export default {
     async sendMessage() {
       const form = document.querySelector('.form')
 
-      if (!this.first_name || !this.last_name || !this.email || !this.message) {
+      if (!this.message) {
         this.error = true
         console.log('error')
       }
