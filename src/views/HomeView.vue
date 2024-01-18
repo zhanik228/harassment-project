@@ -108,7 +108,7 @@
                             type="text" 
                             placeholder="Jane"
                             name="name">
-                        <p v-if="!first_name && error" class="text-red-500 text-xs italic">Please fill out this field.</p>
+                        <p v-if="!first_name && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
                     </div>
                     <div class="w-full md:w-1/2 px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -123,7 +123,7 @@
                             placeholder="Doe"
                             name="last_name"
                             >
-                            <p v-if="!last_name && error" class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p v-if="!last_name && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -141,7 +141,7 @@
                             placeholder="********@*****.**"
                             name="email"
                             >
-                            <p v-if="!email && error" class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p v-if="!email && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
                     </div>
                 </div>
               
@@ -157,7 +157,7 @@
                             :class="`appearance-none block w-full bg-gray-200 text-gray-700 border ${!message && error ? 'border-red-500' : ''} rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`"
                             name="message"
                             ></textarea>
-                            <p v-if="!message && error" class="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p v-if="!message && error" class="text-red-500 text-xs italic">Пожалуйста заполните это поле.</p>
                     </div>
                     <div class="flex justify-end w-full px-3">
                         <button
