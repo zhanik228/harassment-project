@@ -7,20 +7,19 @@
         <div class="grid grid-cols-1 md:grid-cols-12 border">
             <div class="bg-gray-900 md:col-span-4 p-5 sm:p-10 text-white">
                 <div class="logo">
-                    <img class="mx-auto" src="../assets/logo108.png" alt="">
+                    <img width="108" class="mx-auto" src="../assets/logo.png" alt="">
                 </div>
                 <h2 class="mt-4 text-xl mb-10 text-center">
-                    Комитет Государственных Доходов Министерства финансов Республики Казахстан
+                    Прокуратура области Жетісу
                 </h2>
                 <p class="mt-4 text-sm leading-7 font-regular uppercase">
                     Обращение 
                 </p>
                 <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
                     Связаться с <span class="text-indigo-600">Нами</span>
-                </h3>
-<!--               
+                </h3>           
                 <div class="flex items-center mt-5">
-                    <svg class="h-6 mr-2 text-indigo-600" fill="currentColor" version="1.1"
+                    <svg class="w-[64px] h-6 mr-2 text-indigo-600" fill="currentColor" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.536 489.536"
                         xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 489.536 489.536">
                         <g>
@@ -35,8 +34,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="text-sm">House #14, Street #12, Darulaman Road, Kabul, Afghanistan.</span>
-                </div> -->
+                    <span class="text-sm">Республика Казахстан, Жетысуская область, город Талдыкорган, улица Толебаева, 51</span>
+                </div>
                 <div class="flex items-center mt-5">
                     <svg class="h-6 mr-2 text-indigo-600" fill="currentColor" version="1.1" id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -56,9 +55,9 @@
                     </svg>
                     <span class="text-sm">24/7</span>
                 </div>
-                <div class="flex items-center mt-5 gap-2">
+                <!-- <div class="flex items-center mt-5 gap-2">
                     <span class="font-bold">Telegram:</span> <a href="https://t.me/SalyqBot" class="text-sm text-indigo-600 font-semibold"> @SalyqBot</a>
-                </div>
+                </div> -->
                 <p class="mt-4 leading-7 text-gray-200">
                     Все данные защищены
                 </p>
